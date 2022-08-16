@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>MovieBase - A Complete Database of the Box Office</title>
+  <meta name="description" content="This is assignment on bootstrap where I've designed a demo of my imdB">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="Iron Man, Captain America, Thor, Hulk, Avengers, Civil War, Infinity War, Age of Ultron, Marvel Cinematic Universe, Black Panther, Ant Man, Dr. Strange, Stanley Kubrick, Film Making, Actors">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero.css"> <!--Linking my style.css-->
+  
+
+  <!--Linking the bootstrap css here-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="css/all.min.css"> <!--Linked Fontawesome Icons-->
+  <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet"><!--Google font for movie titles-->
+
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+  -->
+
+  <!--Beginning page layout with bootstrap in it-->
+
+  <header> <!--My Header Begins here-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light text-center"> <!--My Nav Bar with Logo-->
+        <a class="navbar-brand" href="#"><img src="img/Aman_Logo.jpg" width="80" height="80" alt="MovieBase"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">service</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link btn dropdown-toggle" role="button" href="#" id="headerDropDown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fun Facts</a>
+              <div class="dropdown-menu" aria-labelledby="headerDropDown">
+                  <h6 class="dropdown-header">Fun Facts About</h6>
+                  <a class="dropdown-item" href="#">Movies</a>
+                  <a class="dropdown-item" href="#">service</a>
+                  <a class="dropdown-item" href="#">Film Making</a>
+              </div>
+            </li>
+          </ul>
+          
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#signInModal"> Sign Up / Sign In </button>
+        
+        </div>
+    </nav> <!--Navbar ends here-->
+  </header> <!--My Header ends here-->
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Marvel Movies</h1>
+      <p>Welcome on this site</p>
+      <button>Scroll down</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="container" id="main"><!--Main Container is here-->
+
+      <div class="modal fade" id="signInModal"> <!--Modal view begins here-->
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <section class="modal-body">
+                  <ul class="nav nav-tabs nav-fill justify-content-center">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#tabLogIn" data-toggle="tab">Log In</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#tabSignUp" data-toggle="tab">Sign Up</a>
+                      </li>
+                  </ul>
+
+                  <div class="tab-content"><!--Tabbed pane begins here-->
+                  <form class="tab-pane active form-horizontal" id="tabLogIn">
+                      <div class="form-group">
+                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                        <div class="col-lg-10">
+                          <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-2 control-label" for="inputComment">Password</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" id="inputEmail" type="text" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-lg-10">
+                            <button class="btn btn-success pull-right">Sign In</button>
+                          </div>
+                      </div>
+                  </form>
+
+                  <form class="tab-pane form-horizontal" id="tabSignUp">
+                      <div class="form-group">
+                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                        <div class="col-lg-10">
+                          <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-lg-2 control-label" for="inputComment">Password</label>
+                        <div class="col-lg-10">
+                            <input class="form-control" id="inputEmail" type="text" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-lg-10 control-label" for="inputComment">Confirm Password</label>
+                          <div class="col-lg-10">
+                              <input class="form-control" id="inputEmail" type="text" placeholder="Confirm Password">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-lg-10">
+                            <button class="btn btn-success pull-right">Sign Up</button>
+                          </div>
+                      </div>
+                  </form>
+
+                  </div><!--Tabbed pane ends here-->
+              </section>
+            </div>
+          </div>
+      </div> <!--Modal View ends here-->
+      
+
+      <div class="container-fluid"> <!--Grid Layout begins Here-->
+        <br>
+
+        <h3 class="text-center">List of Movies in Marvel Cinematic Universe</h3>
+        <br>
+        <section class="row">
+
+        <section class="row">
+              <article class="col-sm-4 text-center">
+                  <figure>
+                      <img src="img/moviePosters/Iron_Man_3_theatrical_poster.jpg" alt="Iron Man 3" class="moviePoster">
+                      <figcaption class="movieTitle"><h3>Iron Man 3</h3></figcaption>
+                  </figure>
+                    <p><strong>Ratings: </strong>7.2 / 10</p>
+                    <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Watch Trailer</a>
+                        <a class="dropdown-item" href="#">Watch Movie</a>
+                        <a class="dropdown-item" href="#">Movie Facts</a>
+                    </div>
+              </article>
+              <article class="col-sm-4 text-center">
+                  <figure>
+                      <img src="img/moviePosters/Captain_America_The_Winter_Soldier.jpg" alt="Winter Soldier" class="moviePoster">
+                      <figcaption class="movieTitle"><h3>Captain America: The Winter Soldier</h3></figcaption>
+                  </figure>
+                    <p><strong>Ratings: </strong>7.8 / 10</p>
+                    <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Watch Trailer</a>
+                        <a class="dropdown-item" href="#">Watch Movie</a>
+                        <a class="dropdown-item" href="#">Movie Facts</a>
+                    </div>
+              </article>
+              <article class="col-sm-4 text-center">
+                  <figure>
+                      <img src="img/moviePosters/Guardians_of_the_Galaxy_poster.jpg" alt="GoTG vol1" class="moviePoster">
+                      <figcaption class="movieTitle"><h3>Guardians of The Galaxy</h3></figcaption>
+                  </figure>
+                    <p><strong>Ratings: </strong>8.1 / 10</p>
+                    <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Watch Trailer</a>
+                        <a class="dropdown-item" href="#">Watch Movie</a>
+                        <a class="dropdown-item" href="#">Movie Facts</a>
+                    </div>
+              </article>
+        </section>
+
+        <section class="row">
+            <article class="col-sm-4 text-center">
+                <figure>
+                    <img src="img/moviePosters/Avengers_Age_of_Ultron_poster.jpg" alt="Age of Ultron" class="moviePoster">
+                    <figcaption class="movieTitle"><h3>Avengers: Age of Ultron</h3></figcaption>
+                </figure>
+                  <p><strong>Ratings: </strong>7.3 / 10</p>
+                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Watch Trailer</a>
+                      <a class="dropdown-item" href="#">Watch Movie</a>
+                      <a class="dropdown-item" href="#">Movie Facts</a>
+                  </div>
+            </article>
+            <article class="col-sm-4 text-center">
+                <figure>
+                    <img src="img/moviePosters/Ant-Man_poster.jpg" alt="Ant Man" class="moviePoster">
+                    <figcaption class="movieTitle"><h3>Ant Man</h3></figcaption>
+                  </figure>
+                  <p><strong>Ratings: </strong>7.3 / 10</p>
+                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Watch Trailer</a>
+                  <a class="dropdown-item" href="#">Watch Movie</a>
+                  <a class="dropdown-item" href="#">Movie Facts</a>
+              </div>
+            </article>
+            <article class="col-sm-4 text-center">
+                <figure>
+                    <img src="img/moviePosters/Captain_America_Civil_War_poster.jpg" alt="Civil War" class="moviePoster">
+                    <figcaption class="movieTitle"><h3>Captain America: Civil War</h3></figcaption>
+                  </figure>
+                  <p><strong>Ratings: </strong>7.8 / 10</p>
+                  <p class="dropdown show btn btn-secondary dropdown-toggle" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</p>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Watch Trailer</a>
+                  <a class="dropdown-item" href="#">Watch Movie</a>
+                  <a class="dropdown-item" href="#">Movie Facts</a>
+              </div>
+            </article>
+        </section>
+
+       
+        
+      </div><!--Grid Layout Ends here-->
+
+    </div><!--Main container Ends here-->
+    
+    
+  </main>
+  <br>
+  <br>
+
+  <footer> <!--My Footer begins here-->
+    <div class="container">
+      <section class="row align-items-center">
+        <div class="col-xs-3 col-sm-3">
+          <h6>I don't own any Copyrights&copy;</h6>
+        </div>
+
+        <div class="col-xs-2 col-sm-2">
+          <h6><a href="#">About Me</a></h6>
+        </div>
+
+        <div class="col-xs-3 col-sm-3">
+          <ul style="list-style: none;">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Actors</a></li>
+            <li><a href="#">Fun Facts</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-2 col-sm-2">
+          <ul style="list-style: none;">
+            <li><h6><a href="#"><i class="fab fa-facebook-square"></i></a></h6></li>
+            <li><h6><a href="#"><i class="fab fa-twitter-square"></i></a></h6></li>
+            <li><h6><a href="#"><i class="fab fa-instagram"></i></a></h6></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-2 col-sm-2">
+          <p>Coded with &hearts;</p>
+        </div>
+
+      </section>
+
+    </div>
+
+  </footer> <!--Page ends here with footer-->
+
+  <!--All the JavaScript is down here-->
+  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+  <!--js for bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
